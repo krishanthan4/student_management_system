@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+<script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Add your custom styles here */
+    </style>
+</head>
+
+<body class="flex h-screen bg-gray-100">
+    <!-- Sidebar -->
+    <div class="bg-gray-800 text-white w-1/5 flex flex-col items-center">
+        <div class="py-4 text-2xl font-bold">Admin Dashboard</div>
+        <nav class="text-sm w-full">
+            <a href="./manage_teacher.html" class="block py-2 px-4 hover:bg-gray-700">Teachers</a>
+            <a href="#" class="block py-2 px-4 hover:bg-gray-700">Students</a>
+            <a href="#" class="block py-2 px-4 hover:bg-gray-700">Academic Officers</a>
+            <a href="#" class="block py-2 px-4 hover:bg-gray-700">Departments</a>
+            <a href="#" class="block py-2 px-4 hover:bg-gray-700">Profile</a>
+            <a href="../html/settings.html" class="block py-2 px-4 hover:bg-gray-700">Settings</a>
+            <a href="../html/login.html" class="block py-2 px-4 hover:bg-gray-700">Logout</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1 p-8">
+        <div class="flex flex-row justify-between py-3">
+            <h2 class="text-2xl font-semibold w-fit">administrators Details</h2>
+            <div class="flex flex-col max-w-full bg- items-end justify-end">
+                <a href="../html/create.html"> <button class="bg-green-500 me-5 w-fit hover:bg-green-700 text-white font-bold py-1 px-2 rounded">New</button></a>
+            </div>
+        </div>
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead>
+                <tr>
+                    <th class="text-left py-2 px-4">Admin ID</th>
+                    <th class="text-left py-2 px-4">Name</th>
+                    <th class="text-left py-2 px-4">Email</th>
+                    <th class="text-left py-2 px-4">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample Data - Replace with actual admin details from your backend -->
+                <tr>
+                    <td class="border-t py-2 px-4">1</td>
+                    <td class="border-t py-2 px-4">John Doe</td>
+                    <td class="border-t py-2 px-4">johndoe@example.com</td>
+                    <td class="border-t py-2 px-4">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded mr-2">Edit</button>
+                        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded">Delete</button>
+                    </td>
+                </tr>
+                <!-- More rows can be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

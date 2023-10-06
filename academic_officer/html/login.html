@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Academic Officer Portal | Login</title>
+</head>
+<body>
+    <div class="w-screen  h-screen">
+
+        <div class="p-5 h-full  bg-yellow-300 flex flex-col gap-3 justify-center items-center rounded-md">
+<h1 class="uppercase font-semibold text-2xl text-center tracking-[10px]">Admin Login</h1>
+<div id="ErrorOr"></div>
+<input id="admin_username" type="text" class="py-1 outline-none px-2 bg-white" placeholder="Enter Your Username">
+<input id="admin_password" type="password" class="outline-none py-1 px-2 bg-white" placeholder="Enter Your password">
+<button class="bg-red-600 hover:bg-red-700 w-[16.5rem] font-semibold text-white py-2" onclick="admin_login();">Log In</button>
+<!-- <p>don't Have an Account </p> -->
+        </div>
+    </div>
+<script src="../js/login.js"></script>
+</body>
+</html>
